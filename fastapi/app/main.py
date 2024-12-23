@@ -19,4 +19,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+async def get_app_details():
+    return {"message": f"This is FastAPI!"}
+
 app.include_router(items_router, tags=["Items"], prefix="/api")
