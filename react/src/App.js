@@ -7,7 +7,7 @@ function App() {
   const [editingIndex, setEditingIndex] = useState(null);
   const [editingText, setEditingText] = useState('');
 
-  const API_URL = 'http://localhost:5000/items';
+  const API_URL = 'http://localhost:8000/api/items';
 
   const fetchItems = async () => {
     try {
